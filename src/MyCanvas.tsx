@@ -4,6 +4,7 @@ import {
     Zoom,
     Pan,
   } from '@h5web/lib'
+import { InvariantBox } from './MyComponents';
 export function MyCanvas() {
 
   return (
@@ -15,6 +16,7 @@ export function MyCanvas() {
       <Pan modifierKey={'Control'} />
       <Zoom />
       <ResetZoomButton />
+      <InvariantBox size={[200, 150, 250]}/>
     </VisCanvas>
   );
 }
